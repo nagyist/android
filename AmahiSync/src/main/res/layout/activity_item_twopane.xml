@@ -1,0 +1,48 @@
+<!--
+  ~ This source module contains confidential and proprietary
+  ~ information of Amahi Inc. It is not to be disclosed or used
+  ~ except in accordance with applicable agreements. This
+  ~ copyright notice does not evidence any actual or intended
+  ~ publication of such source code.
+  ~
+  ~ Copyright (c) 2014 Amahi. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".FileListActivity">
+
+    <!--
+    This layout is a two-pane layout for the Items
+    master/detail flow. See res/values-large/refs.xml and
+    res/values-sw600dp/refs.xml for an example of layout aliases
+    that replace the single-pane version of the layout with
+    this two-pane version.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+
+    <fragment
+        android:id="@+id/item_list"
+        android:name="org.amahi.anywhere.FileListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@android:layout/list_content" />
+
+    <FrameLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

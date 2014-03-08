@@ -1,0 +1,21 @@
+<!--
+  ~ This source module contains confidential and proprietary
+  ~ information of Amahi Inc. It is not to be disclosed or used
+  ~ except in accordance with applicable agreements. This
+  ~ copyright notice does not evidence any actual or intended
+  ~ publication of such source code.
+  ~
+  ~ Copyright (c) 2014 Amahi. All rights reserved.
+  -->
+
+<resources>
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    <item type="layout" name="activity_item_list">@layout/activity_item_twopane</item>
+    <item type="layout" name="activity_login">@layout/activity_login_twopane</item>
+</resources>
